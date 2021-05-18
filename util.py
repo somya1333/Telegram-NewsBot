@@ -7,7 +7,7 @@ client=gnewsclient.NewsClient()
 import dialogflow_v2 as dialogflow
 # from dialogflow_v2.types import TextInput, QueryInput
 dialogflow_session_client = dialogflow.SessionsClient()
-PROJECT_ID = "newsbot-ndnn"
+PROJECT_ID = "Enter the dialogflow project id here"
 
 def detect_intent_from_text(text, session_id, language_code='en'):
     session = dialogflow_session_client.session_path(PROJECT_ID, session_id)
@@ -27,8 +27,4 @@ def fetch_news(parameters):
     client.topic = parameters.get('category')
     client.location = parameters.get('geo-country')
     client.language = parameters.get('language')
-    # client.sort = parameters.get('sort')
-    # client.date = parameters.get('date-time')
-    # client.keyword = parameters.get('keyword')
-    # client.source = parameters.get('source')
-    return client.get_news()[:3]
+    return client.get_news()[:5]
