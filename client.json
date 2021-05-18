@@ -1,12 +1,1 @@
-{
-  "type": "service_account",
-  "project_id": "newsbot-ndnn",
-  "private_key_id": "6aa738e761c0a263eb23caa40e33cd890f4807ed",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDC5mfJ44P+peEw\ndi5mOMAxvDuhTH09Zc6LKCjhH4owSwuEnr/TwdRSNp7ImIBTDqoaDe2QAb0WLub7\nUQYSVeJs3nhXeeyaG+T/Pd4aRmOP25ujT6TUUZ+suIyE78/vD+DADRogAQEECoQM\nli9at+Bl4gZNaovbmOoklXh3qWqbs49f9VY8WBYVXoRXIGavLIB6fybQ2t3l43q0\n4KVUeREVMTHrajT0WdpQyHiQ/AkxXcZLe/AGnY0OYFGlpCOpd4m3zqSsFZztv7Db\ntKtlH6Dv/kmbt7Y/DtND7BtgHxEsGLWsRaXocyjib1DABt5lWZNnx25iYjYy+70z\n+Q61j4U9AgMBAAECggEATXwakTohtPCv2XtysPMo/dzu/A6T0AAUoGBj+DR41QBQ\n4PXYH9D0n4bVk7yFb//pgpg89T6rtREKhanNtyZr8Yp035o6hX5HiW5ISbvoQz40\n3zV/u2WEDMAGJafNzCZM3S2YUFb112xy2SowQ2nNDdRRWx/b4H8nv0mpbjFtj96d\nNNlEkd0LyhXVjcls5sp6LuL1JW6ZVtBzAllMXHAncmk+krkWf9aHfXVQWp1odKAn\n6yuHJBHQXLPQMGO6UGNlcghs/tunjqlQjDCqbgSheijS/B0xjjx5L2jDwJ1gh9Kz\nTq5Z6CHA3NEFi3ft/lgectmhLihmgsqsw9WCd7W9hQKBgQD955bsYvUxEiCSGC0o\n/xW7cJPEqy4mTksrQuSABxn0MxaZvrzAW1mmft6SC6WYKiuoj/6z2KzPZOYQoVhG\nJVYyplTc6gZ+J4Szo4ymENsPCIzIqG4Dpi6IlLirK596dVwOVElSMVd1on+qxe1e\nrPxFpEyNxpoPmyVDIiAfS4u5iwKBgQDEgij4HAGO3M8Pif8c8pVUnQD9Mo7ow5rY\n1dtXdp0GCyM9rGGXcu/hFyowkMbX0h942YLaJVf4xrTQcg5uH/GcL35URJKoflHe\n0JC7x5FmQwhSW+qe7Czi3GDjjRowgiOzbNakFQC1v+ci0rcBPs3L5GTq2UDjXbWG\n4wbdqFNFVwKBgQDeCgkR7/g8UX3qRPo5P9nhcTHIa2qQVSenTXhF/e/UfljlWsf1\n7+0WjRxW25iU2UwUvNggrvtw4uvO30ozDbOz14GfL4k+CZEjB4OYNmVbYD69u415\n43oONwDHr/5nOPqoDU2Rc1ToqpK65RwQD3cN8ACCe4t+2k5bxxwQQiCOwQKBgQCV\nkijS6KY68lDcmAHJK8+EDtkA3+msu63yG50PTqYoQnP5bmr91qtFHdesDZZ8EWCJ\nIK4bks8J+V0JR7c6FTBW3EOAqo0imLuCKCfx9e3y81SzM2k6u7NSncFVkkH76CJ6\nYH5jd+UJcd7hP5ex5/bGmbpCk0hzhxEzcTv5nTR8kwKBgQDcxKNkOZejIr59C9P9\n3+HgD0HoRq3eBR4HsPR9sycYgBGFvD2Mc3s1QEB2mokMoFhI/5gh+zSVIiz69Inx\nzoxKHSTacYGjWk2iRooNuGtHlD1+mnTZ85983eM7rV1NHjWq7AZ0kFK64JMHYEDy\nfD2O8NRZGnM7Weq8iUePKIA4CQ==\n-----END PRIVATE KEY-----\n",
-  "client_email": "dialogflow-fvqcud@newsbot-ndnn.iam.gserviceaccount.com",
-  "client_id": "102191392497744716914",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-fvqcud%40newsbot-ndnn.iam.gserviceaccount.com"
-}
+Put the client.json file that is downloaded from dialogflow service account here
