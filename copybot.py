@@ -10,7 +10,7 @@ from googlesearch import search
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s' , level=logging.INFO)
 logger=logging.getLogger(__name__)
 
-bot_token = '1141938313:AAG9japKMvDoke6i5VFsD4mvXbvOLy61_ps'
+bot_token = 'Enter your bot token here'
 
 app=Flask('__name__')
 
@@ -64,7 +64,7 @@ def error(bot, update):
 
 if __name__=='__main__':
     bot = Bot(bot_token)
-    bot.set_webhook("https://04d40161d5d2.ngrok.io/" + bot_token)
+    bot.set_webhook("Enter the publically accessible URL here" + bot_token)
 
     dp = Dispatcher(bot, None)
     dp.add_handler(CommandHandler('start',start))
