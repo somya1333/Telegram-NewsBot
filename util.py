@@ -18,8 +18,8 @@ def detect_intent_from_text(text, session_id, language_code='en'):
 
 def get_reply(query, chat_id):
     response = detect_intent_from_text(query, chat_id)
-    if response.intent.display_name == 'news.search':
-        return "news.search", f"{dict(response.parameters)}"
+    if response.intent.display_name == 'get_news':
+        return "get_news", dict(response.parameters)
     else:
         return "small_talk", response.fulfillment_text
 
