@@ -6,7 +6,6 @@ from util import get_reply, fetch_news
 from googlesearch import search
 
 # logging the details
-# logging module is used so that all the messages including the errors are shown in pre-defined systematic order
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s' , level=logging.INFO)
 logger=logging.getLogger(__name__)
 
@@ -30,22 +29,18 @@ def start(bot, update):
     bot.send_message(chat_id=update.message.chat_id, text=reply)
 
 def _help(bot, update):
-    # msg = update.message.text
-    reply = f"Ok! This is help desk"
+    author=update.message.from_user.first_name
+    reply = f"I will help you {author}"
     bot.send_message(chat_id = update.message.chat_id, text=reply)
 
 def replytext(bot, update):
     intent, reply = get_reply(update.message.text, update.message.chat_id)
-    if intent=="news.search":
-        # replytext="ok"
-        bot.send_message(chat_id = update.message.chat_id, text=reply)
-        # for j in search(update.message.text, tld="co.in", num=3, stop=3, pause=2): 
-        #     bot.send_message(chat_id = update.message.chat_id, text=j)
-        # reply_articles = fetch_news(reply)
-        # for articles in reply_articles:
-        #     bot.send_message(chat_id = update.message.chat_id, text=articles['link'])
+    if intent=='get_news':
+        articles=fetch_news(reply)
+        for  article in articles:
+            bot.send_message(chat_id=update.message.chat_id,text=article['link'])
     else:
-        bot.send_message(chat_id = update.message.chat_id, text=reply)
+        bot.send_message(chat_id=update.message.chat_id,text=reply)
 
 def copysticker(bot, update):
     # msg = update.message.sticker.file_id
@@ -54,13 +49,6 @@ def copysticker(bot, update):
 def error(bot, update):
     logger.error("Update '%s' caused error '%s'",update,update.error)
 
-# any update is recieved by the updater
-# updates are handeled by the dispatcher
-# def main():
-
-    # updater.start_polling() 
-    # logger.info('Started Polling...')
-    # updater.idle()
 
 if __name__=='__main__':
     bot = Bot(bot_token)
